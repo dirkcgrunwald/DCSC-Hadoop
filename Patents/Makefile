@@ -37,7 +37,7 @@ pat63_99.hdfs: patents.hdfs apat63_99.zip
 	zcat apat63_99.zip | hadoop fs -put - patents/pat63_99.txt
 	touch pat63_99.hdfs
 
- clean:
+clean:
 	-rm *.hdfs
 
 spotless: clean
